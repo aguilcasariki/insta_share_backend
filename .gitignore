@@ -1,0 +1,14 @@
+# Ignora la carpeta node_modules
+node_modules/
+
+# Ignora archivos de configuración
+.env
+
+# Ignora archivos generados por npm
+package-lock.json
+
+# Ignora archivos del sistema Mac
+.DS_Store
+
+# Ignora archivos de configuración SASS
+.sass-cache/
