@@ -1,17 +1,19 @@
 {
-  "name": "insta_share_backend",
+  "name": "insta-share-auth",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "format": "prettier --write .",
     "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ricardo Aguilera Casabella",
   "license": "ISC",
   "dependencies": {
-    
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.5",
     "express": "^4.18.3",
@@ -22,6 +24,9 @@
   "devDependencies": {
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.29.1"
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5"
   }
 }

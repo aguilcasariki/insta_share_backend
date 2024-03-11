@@ -1,5 +1,5 @@
-import bcrypt from 'bcryptjs';
-import User from '../models/user.model.js';
+import bcrypt from "bcryptjs";
+import User from "../models/user.model.js";
 
 const register = async (req, res) => {
   try {
@@ -17,7 +17,7 @@ const register = async (req, res) => {
       email: user.email,
     });
   } catch (error) {
-    return res.status(500).json({ message: 'Error registering user', error });
+    return res.status(500).json({ message: "Error registering user", error });
   }
 };
 
