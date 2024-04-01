@@ -1,5 +1,5 @@
 import bcrypt from "bcryptjs";
-import User from "../models/user.model.js";
+import User from "../models/files.model.js";
 
 const register = async (req, res) => {
   try {
@@ -13,6 +13,7 @@ const register = async (req, res) => {
     await user.save();
 
     return res.status(201).json({
+      id: user._id,
       username: user.username,
       email: user.email,
     });
