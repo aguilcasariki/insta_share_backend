@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
+   "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
-    "format": "prettier --write .",
-    "dev": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write ."
   },
+  
   "author": "Ricardo Aguilera Casabella",
   "license": "ISC",
   "dependencies": {
